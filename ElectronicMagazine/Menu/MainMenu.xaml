@@ -1,0 +1,35 @@
+﻿<Window x:Class="ElectronicMagazine.Menu.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElectronicMagazine.Menu"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Меню" Height="450" Width="450" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/rozov.jpg"/>
+        </Grid.Background>
+        <Button Content="Выбрать" HorizontalAlignment="Center" Margin="0,273,0,0" VerticalAlignment="Top" Height="44" Width="122" Click="Button_Click"/>
+        <Label Content="Группа" HorizontalAlignment="Left" Margin="150,182,0,0" VerticalAlignment="Top" Width="82"/>
+        <ComboBox x:Name="ComboBoxClass" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="37" Margin="0,217,0,0"/>
+        <Label Content="Вы вошли как: " HorizontalAlignment="Left" Margin="37,32,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="LableFirstName" Content="Label" HorizontalAlignment="Left" Margin="136,32,0,0" VerticalAlignment="Top"/>
+        <Button Content="Назад" HorizontalAlignment="Left" x:Name="btnBack"
+    Click="btnBack_Click" Height="64"
+Width="68" VerticalAlignment="Top"
+    Background="{x:Null}" BorderBrush="{x:Null}" Margin="16,340,0,0">
+            <Button.ContentTemplate >
+                <DataTemplate >
+                    <Image  Source="/Magazine/icon/back.png" Stretch="Fill" />
+                </DataTemplate>
+            </Button.ContentTemplate>
+        </Button>
+        <ComboBox x:Name="ComboBoxDis" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="37" Margin="0,121,0,0"/>
+        <Label Content="Дисциплина" HorizontalAlignment="Left" Margin="150,90,0,0" VerticalAlignment="Top" Width="82"/>
+        <Button Content="Сообщения" HorizontalAlignment="Left" Margin="328,23,0,0" VerticalAlignment="Top" Click="btnProf_Click" Height="35" Width="100"/>
+        <!--!-->
+    </Grid>
+
+</Window>
